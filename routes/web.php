@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/', 'MarsroverController@index');
+
+Route::get('/import', 'MarsroverController@importWorker');
+
+Route::get('/destroy', 'MarsroverController@destroyWorker');
