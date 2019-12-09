@@ -10,7 +10,7 @@ class Photos extends Model
 
     //OneToMany relation
     public function photosdata(){
-        return $this->hasMany("PhotosData","photos_id","id");
+        return $this->hasMany("App\PhotosData","photos_id","id");
     }
 
 }
