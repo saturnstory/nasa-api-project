@@ -1,0 +1,5 @@
+﻿@yield('css')
+@include('themes.default.layout.header')
+@yield('content')
+@yield('js')
+@include('themes.default.layout.footer')
